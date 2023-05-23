@@ -1,0 +1,26 @@
+.homeCard {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  padding: 1rem;
+  transition: ease-in-out 200ms;
+  gap: 1rem;
+  border-radius: 5px;
+  .homeCardContent {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+    p {
+      margin: 0px;
+    }
+    h2 {
+      font-weight: 500;
+      margin: 0px;
+      font-size: 1.5rem;
+    }
+  }
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 3px 0px 0px rgba(0, 0, 0, 0.75);
+  }
+}

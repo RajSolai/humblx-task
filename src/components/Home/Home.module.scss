@@ -1,0 +1,27 @@
+.cardWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.homePage {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.sortBtn {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.5rem;
+}
+.chartBox {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  width: fit-content;
+  transition: ease-in-out 200ms;
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 3px 0px 0px rgba(0, 0, 0, 0.75);
+  }
+}

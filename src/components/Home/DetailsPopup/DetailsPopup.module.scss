@@ -1,0 +1,59 @@
+h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin: 0px;
+}
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checks {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: 0.5rem 0px;
+  flex-wrap: wrap;
+}
+
+.organizationRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.roomStatus {
+  padding: 0.5rem;
+  border-radius: 10px;
+  width: fit-content;
+}
+.roomStatusBad {
+  @extend .roomStatus;
+  background-color: #ff9f9f;
+  color: #fff;
+}
+.roomStatusGood {
+  @extend .roomStatus;
+  background-color: #9fe6a0;
+}
+
+.checkChip {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #e3f4f4;
+  font-size: 1rem;
+}
+
+.closeBtn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  &:hover {
+    color: #ff0000;
+  }
+}
