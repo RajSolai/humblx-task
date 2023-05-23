@@ -151,7 +151,7 @@ export const data = [
         },
       ],
     },
-    open: false,
+    open: true,
     parameters: [
       {
         name: "Floor",

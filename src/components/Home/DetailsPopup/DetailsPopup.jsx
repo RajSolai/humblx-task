@@ -37,12 +37,11 @@ const DetailsPopup = ({ onClose, roomEntry }) => {
               <img src={roomEntry.organization.logo} height="50px" alt="" />
               <p>{roomEntry.organization.name}</p>
             </div>
-            <div className={styles.organizationRow}>
+            <div className={styles.contactRow}>
               <div className={styles.organizationRow}>
                 <p>📞</p>
                 <p>{roomEntry.organization.contact}</p>
               </div>
-              <p>|</p>
               <div className={styles.organizationRow}>
                 <p>📍</p>
                 <p>{roomEntry.organization.address}</p>

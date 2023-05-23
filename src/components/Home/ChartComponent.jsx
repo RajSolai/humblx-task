@@ -3,21 +3,24 @@ import React from "react";
 import {
   BarChart,
   Bar,
+  ResponsiveContainer,
   XAxis,
   YAxis,
   CartesianGrid,
   Tooltip,
 } from "recharts";
 
-const ChartComponent = ({ data }) => {
+const ChartComponent = ({ data, x, y }) => {
+  const width = window.innerWidth;
+  const isMobile = width <= 500;
   return (
-    <BarChart width={600} height={300} data={data}>
+    <BarChart width={isMobile ? width-60 :width / 2} height={300} data={data}>
       <CartesianGrid strokeDasharray="3 3" />
-      <XAxis dataKey="name" />
+      <XAxis dataKey={x} />
       {/* <YAxis /> */}
       <Tooltip />
       {/* <Legend /> */}
-      <Bar dataKey="okayCount" fill="#8884d8" />
+      <Bar dataKey={y} fill="#8884d8" />
     </BarChart>
   );
 };
